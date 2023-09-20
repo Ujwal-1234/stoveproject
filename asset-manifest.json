@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stoveproject/static/css/main.dbc21807.css",
+    "main.js": "/stoveproject/static/js/main.2505791d.js",
+    "static/js/787.eb133c22.chunk.js": "/stoveproject/static/js/787.eb133c22.chunk.js",
+    "index.html": "/stoveproject/index.html",
+    "main.dbc21807.css.map": "/stoveproject/static/css/main.dbc21807.css.map",
+    "main.2505791d.js.map": "/stoveproject/static/js/main.2505791d.js.map",
+    "787.eb133c22.chunk.js.map": "/stoveproject/static/js/787.eb133c22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbc21807.css",
+    "static/js/main.2505791d.js"
+  ]
+}
