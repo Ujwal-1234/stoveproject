@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Log from './components/Log'
 import Main from './components/Main'
 import './App.css';
+import Loading from './components/Loading';
 // import 'leaflet/dist/leaflet.css'
 
 function App() {
@@ -10,14 +11,15 @@ function App() {
   const [loading, setLoading] = useState(true)
   useEffect(()=>{
     setInterval(() => {
-      sessionStorage.getItem('sessionid')?setLog(true):setLog(false)
+      setLoading(false)
       // console.log(sessionStorage.getItem('sessionid'))
+      sessionStorage.getItem('sessionid')?setLog(true):setLog(false)
     }, 1000);
   },[])
 
   return (
     <div className=" bg-black flex flex-wrap items-center justify-center min-h-screen min-w-full max-h-screen max-w-full overflow-auto">
-      {log?<Main/>:<Log/>}
+      {loading?<Loading/>:log?<Main/>:<Log/>}
     </div>
   );
 }
