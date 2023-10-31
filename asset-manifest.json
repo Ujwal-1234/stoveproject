@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/stoveproject/static/css/main.9ee08a5d.css",
-    "main.js": "/stoveproject/static/js/main.2e0d66db.js",
+    "main.css": "/stoveproject/static/css/main.83fc1931.css",
+    "main.js": "/stoveproject/static/js/main.fcdbb9b6.js",
     "static/js/787.eb133c22.chunk.js": "/stoveproject/static/js/787.eb133c22.chunk.js",
     "index.html": "/stoveproject/index.html",
-    "main.9ee08a5d.css.map": "/stoveproject/static/css/main.9ee08a5d.css.map",
-    "main.2e0d66db.js.map": "/stoveproject/static/js/main.2e0d66db.js.map",
+    "main.83fc1931.css.map": "/stoveproject/static/css/main.83fc1931.css.map",
+    "main.fcdbb9b6.js.map": "/stoveproject/static/js/main.fcdbb9b6.js.map",
     "787.eb133c22.chunk.js.map": "/stoveproject/static/js/787.eb133c22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ee08a5d.css",
-    "static/js/main.2e0d66db.js"
+    "static/css/main.83fc1931.css",
+    "static/js/main.fcdbb9b6.js"
   ]
 }
