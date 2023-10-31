@@ -5,7 +5,7 @@ export default function Log() {
     const l_user = useRef()
     const l_pass = useRef()
     const user_login = () =>{
-      const url = 'http://techpradnya.in:3000/login'
+      const url = 'http://localhost:3000/login'
       const data = {
         userid: l_user.current.value,
         password: l_pass.current.value,

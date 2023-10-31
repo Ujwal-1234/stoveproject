@@ -13,6 +13,7 @@
     "deck.gl": "^8.9.28",
     "gh-pages": "^6.0.0",
     "leaflet": "^1.9.4",
+    "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.15.0",
     "ol": "^4.6.5",
     "openlayers": "^4.6.5",
@@ -26,8 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

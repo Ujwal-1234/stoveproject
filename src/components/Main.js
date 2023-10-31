@@ -28,7 +28,7 @@ export default function Main() {
       const fetchData = async () => {
         try {
           console.log(sessionStorage.getItem('sessionid'))
-          const url = 'http://techpradnya.in:3000/getstove'
+          const url = 'http://localhost:3000/getstove'
           const data = {
             sessionid:sessionStorage.getItem('sessionid'),
             admin:sessionStorage.getItem('admin')
@@ -80,7 +80,7 @@ export default function Main() {
   
     // console.log(sessionStorage.getItem('sessionid'))
     const user_logout=()=>{
-      const url = 'http://techpradnya.in:3000/logout'
+      const url = 'http://localhost:3000/logout'
       const data = {
         sessionid:sessionStorage.getItem('sessionid')
       };
@@ -123,7 +123,7 @@ export default function Main() {
         console.log('error')
       }else{
         console.log(serial.current.value, imei.current.value, simNumber.current.value)
-        const url = 'http://techpradnya.in:3000/newdevice'
+        const url = 'http://localhost:3000/newdevice'
         const data = {
           imei: imei.current.value,
           serial: serial.current.value,
@@ -172,7 +172,7 @@ export default function Main() {
   }, []);
     
   return (
-    <div className='text-white flex flex-wrap min-h-screen w-full items-center justify-center'>
+    <div className='text-white flex flex-wrap fixed min-h-screen w-full items-center justify-center'>
         {loading?<Loading/>:mapView?<List data={d_name}/>:<Maps/>}
         <div className=' hidden w-1/12 right-0 bottom-0 lg:flex lg:flex-wrap items-center justify-center rounded-2xl shadow-inner shadow-black p-5'>
             {mapView?<FaMapMarkerAlt onClick={()=>{setMapView(false)}} className=' text-2xl w-full mt-5 hover:text-4xl hover:cursor-pointer'/>:<FaThList onClick={()=>{setMapView(true)}} className=' text-2xl w-full mt-5 hover:text-4xl hover:cursor-pointer'/>}
